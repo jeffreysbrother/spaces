@@ -47,3 +47,11 @@ When I run this command, I see `/usr/bin/python`. This means that we must add th
 ```bash
 #!/usr/bin/python
 ```
+
+If every step is complete, we should be able to run the **spaces** program by simply running the command `spaces` in the desired directory (given that our python file is named "spaces". If it were named "spaces.py", then we'd simply have to run "spaces.py").
+
+###Additional Notes
+
+The preceding steps instruct us to add our scripts into the root of the `bin/` directory. It might, however, be useful to add subdirectories here---each being individually and independently version controlled. To carry this out, it might be the case that we must merely ensure that `/bin/{subdir}` is in the `$PATH` variable (as opposed to `bin/`), but I am unsure of this.
+
+It might also be beneficial to create a `scripts/` directory for all scripts we intend to run in this way (independent of the directory devoted to web projects, if one exists), and then generate a symbolic link to the `bin/` subdirectory. There is some info on this [here](http://apple.stackexchange.com/questions/115646/how-can-i-create-a-symbolic-link-in-terminal), but again, I am unsure of this as well.
