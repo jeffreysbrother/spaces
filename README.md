@@ -4,7 +4,7 @@ To make this script executable and accessible globally we must follow these inst
 
 ###OSX and Linux (POSIX systems)
 
-Navigate to the home directory:
+Navigate to the home directory (/Users/{username} on OSX, /home/{username} on Linux):
 
 ```bash
 cd
@@ -16,7 +16,7 @@ If there is no `bin/` directory here, create one:
 mkdir bin
 ```
 
-Ensure that `bin/` is in the `$PATH` variable. Open the file `.bash_profile` (located in the home directory) and add this line, if necessary:
+We must now ensure that `bin/` is in the `$PATH` variable. Open the file `.bash_profile` which is located in the home (~) directory. If it does not exist, simply create it. Then, add this line:
 
 ```bash
 PATH=$PATH:$HOME/bin
