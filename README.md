@@ -22,17 +22,12 @@ We must now ensure that `bin/` is in the `$PATH` variable. Open the file `.bash_
 PATH=$PATH:$HOME/bin
 ```
 
-Reload your profile by typing this:
-
-```bash
-source ~/.bash_profile
-```
+Reload your profile by typing `source ~/.bash_profile` or simply `. ~/.bash_profile`
 
 Now, simply drop a script into the `/bin` folder (with or without the `.py` extension) Finally, make this file executable by running:
 
 ```bash
-chmod +x scriptname.py
-#or simply: chmod +x scriptname
+chmod +x scriptname
 ```
 
 The steps listed above were taken from suggestions [here](https://shapeshed.com/using-custom-shell-scripts-on-osx-or-linux/). After a bit of experimentation and research, it appears that there are a few *additional* steps we must carry out:
