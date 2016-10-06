@@ -4,7 +4,7 @@ To make this script executable and accessible globally we must follow these inst
 
 ###OSX and Linux (POSIX systems)
 
-Navigate to the home directory (/Users/{username} on OSX, /home/{username} on Linux):
+Navigate to the home directory (`/Users/{username}` on OSX, `/home/{username}` on Linux):
 
 ```bash
 cd
