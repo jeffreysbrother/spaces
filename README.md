@@ -1,6 +1,8 @@
 #Spaces
 
-To make this script executable and accessible globally we must follow these instructions:
+Running this script updates the file names within some directory by replacing spaces with hyphens and uppercase characters with lowercase ones. To make this script executable and accessible globally we must follow these instructions:
+
+> Please note that these steps assume that you are using Zsh. If you are using bash, the steps will be slightly different.
 
 ###OSX and Linux (POSIX systems)
 
@@ -16,13 +18,13 @@ If there is no `bin/` directory here, create one:
 mkdir bin
 ```
 
-We must now ensure that `bin/` is in the `$PATH` variable. Open the file `.bash_profile` which is located in the home (~) directory. If it does not exist, simply create it. Then, add this line:
+We must now ensure that `bin/` is in the `$PATH` variable. Open the file `.zshrc` which is located in the home (~) directory. If it does not exist, simply create it. Then, add this line:
 
 ```bash
 PATH=$PATH:$HOME/bin
 ```
 
-Reload your profile by typing `source ~/.bash_profile` or simply `. ~/.bash_profile`
+If this is a newly-created file, you might need to refresh it by typing `source ~/.zshrc` or simply `. ~/.zshrc`
 
 Now, simply drop a script into the `/bin` folder (with or without the `.py` extension) Finally, make this file executable by running:
 
