@@ -58,4 +58,4 @@ It might also be beneficial to create a `scripts/` directory for all scripts we 
 2. `~/scripts` for globally-executable scripts
 3. `~/bin/{subdir}` as the target of symbolic links stemming from (2)
 
-There is some info on this [here](http://apple.stackexchange.com/questions/115646/how-can-i-create-a-symbolic-link-in-terminal), but again, I am unsure of this as well.
+There is some info on symlinks [here](http://apple.stackexchange.com/questions/115646/how-can-i-create-a-symbolic-link-in-terminal), but again, I am unsure of this as well.
