@@ -1,10 +1,12 @@
 #Spaces
 
-To make this script executable and accessible globally we must follow these instructions:
+Running this script updates the file names within the current working directory by replacing spaces with hyphens and uppercase characters with lowercase ones. To make this script executable and accessible globally, we must follow the following instructions.
+
+> Note: we assume the use of Zsh. If you are using bash, the steps will be different. If this is the case, it will be beneficial to first understand the differences between the way OSX and Linux use the various bash shell config files.  I, personally, use [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) (a Zsh configuration management framework) and these instructions appear to work just fine on both OSX (El Capitan) and Ubuntu (16.04 LTS).
 
 ###OSX and Linux (POSIX systems)
 
-Navigate to the home directory:
+Navigate to the home directory (`/Users/{username}` on OSX, `/home/{username}` on Linux):
 
 ```bash
 cd
@@ -16,23 +18,18 @@ If there is no `bin/` directory here, create one:
 mkdir bin
 ```
 
-Ensure that `bin/` is in the `$PATH` variable. Open the file `.bash_profile` (located in the home directory) and add this line, if necessary:
+We must now ensure that `bin/` is in the `$PATH` variable. Open the file `.zshrc` which is located in the home (~) directory. If it does not exist, simply create it. Then, add this line:
 
 ```bash
 PATH=$PATH:$HOME/bin
 ```
 
-Reload your profile by typing this:
-
-```bash
-source ~/.bash_profile
-```
+If this is a newly-created file, you might need to refresh it by typing `source ~/.zshrc` or simply `. ~/.zshrc`
 
 Now, simply drop a script into the `/bin` folder (with or without the `.py` extension) Finally, make this file executable by running:
 
 ```bash
-chmod +x scriptname.py
-#or simply: chmod +x scriptname
+chmod +x scriptname
 ```
 
 The steps listed above were taken from suggestions [here](https://shapeshed.com/using-custom-shell-scripts-on-osx-or-linux/). After a bit of experimentation and research, it appears that there are a few *additional* steps we must carry out:
@@ -61,4 +58,4 @@ It might also be beneficial to create a `scripts/` directory for all scripts we 
 2. `~/scripts` for globally-executable scripts
 3. `~/bin/{subdir}` as the target of symbolic links stemming from (2)
 
-There is some info on this [here](http://apple.stackexchange.com/questions/115646/how-can-i-create-a-symbolic-link-in-terminal), but again, I am unsure of this as well.
+There is some info on symlinks [here](http://apple.stackexchange.com/questions/115646/how-can-i-create-a-symbolic-link-in-terminal), but again, I am unsure of this as well.
