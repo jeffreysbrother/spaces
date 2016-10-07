@@ -48,7 +48,7 @@ When I run this command, I see `/usr/bin/python`. This means that we must add th
 
 If every step is complete, we should be able to run the **spaces** program by simply typing the command `spaces` in the desired directory (given that our python file is named "spaces". If it were named "spaces.py", then we'd simply have to run "spaces.py").
 
-###Symbolic links
+###Symbolic Links
 
 In the previous steps, I suggest adding our scripts to the root of the `bin/` directory. This would, in most cases, require us to *move* or *copy* a file that was created elsewhere (in some development directory, perhaps). To avoid duplication, we can create a symlink from a dedicated project folder to our `bin/` directory by running this in the command line:
 
