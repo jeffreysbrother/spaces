@@ -26,7 +26,7 @@ PATH=$PATH:$HOME/bin
 
 If this is a newly-created file, you might need to refresh it by typing `source ~/.zshrc` or simply `. ~/.zshrc`
 
-Now, simply drop a script into the `/bin` folder (with or without the `.py` extension) Finally, make this file executable by running:
+Now, simply drop the "spaces" script located in this repository into the `/bin` folder (with or without the `.py` extension) Finally, make this file executable by running:
 
 ```bash
 chmod +x scriptname
