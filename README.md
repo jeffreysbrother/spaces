@@ -46,12 +46,14 @@ When I run this command, I see `/usr/bin/python`. This means that we must add th
 #!/usr/bin/python
 ```
 
-If every step is complete, we should be able to run the **spaces** program by simply typing the command `spaces` in the desired directory (given that our python file is named "spaces". If it were named "spaces.py", then we'd simply have to run "spaces.py").
+We should now be able to run the **spaces** program by simply typing the command `spaces` in the desired directory (given that our python file is named "spaces". If it were named "spaces.py", then we'd simply have to run "spaces.py").
 
 ###Symbolic Links
 
-In the previous steps, I suggest adding our scripts to the root of the `bin/` directory. This would, in most cases, require us to *move* or *copy* a file that was created elsewhere (in some development directory, perhaps). To avoid duplication, we can create a symlink from a dedicated project folder to our `bin/` directory by running this in the command line:
+In the previous steps, I suggest adding the script to the root of the `bin/` directory. This would, in most cases, require us to *move* or *copy* a file that was created elsewhere (in some development directory, perhaps). To avoid duplication, we can create a symlink from a dedicated project folder to our `bin/` directory by running this in the command line:
 
 ```bash
 ln -s /path/to/original /path/to/symlink
 ```
+
+If the symbolic link is created successfully, we can access the script *as if* it were actually placed in the `bin/` directory.
