@@ -12,7 +12,7 @@ Navigate to the home directory (`/Users/{username}` on OSX, `/home/{username}` o
 cd
 ```
 
-If there is no `bin/` directory here, create one:  
+If there is no `bin/` directory here, create one:
 
 ```bash
 mkdir bin
