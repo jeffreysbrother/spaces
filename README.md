@@ -1,10 +1,10 @@
-#Spaces
+# Spaces
 
 Running this script updates the file names within the current working directory by replacing spaces with hyphens and uppercase characters with lowercase ones. To make this script executable and accessible globally, we must follow the following instructions.
 
 > Note: we assume the use of Zsh. If you are using bash, the steps will be different. If this is the case, it will be beneficial to first understand the differences between the way OSX and Linux use the various bash shell config files. I, personally, use [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) (a Zsh configuration management framework) and these instructions appear to work just fine on both OSX (Sierra) and Ubuntu (16.04 LTS). Please go [here](https://github.com/jeffreysbrother/zspaces) if you'd prefer a Zsh script that does the same thing.
 
-###OSX and Linux (POSIX systems)
+### OSX and Linux (POSIX systems)
 
 Navigate to the home directory (`/Users/{username}` on OSX, `/home/{username}` on Linux):
 
@@ -48,7 +48,7 @@ When I run this command, I see `/usr/bin/python`. This means that we must add th
 
 We should now be able to run the **spaces** program by simply typing the command `spaces` in the desired directory (given that our python file is named "spaces". If it were named "spaces.py", then we'd simply have to run "spaces.py").
 
-###Symbolic Links
+### Symbolic Links
 
 In the previous steps, I suggest adding the script to the root of the `bin/` directory. This would, in most cases, require us to *move* or *copy* a file that was created elsewhere (in some development directory, perhaps). To avoid duplication, we can create a symlink from a dedicated project folder to our `bin/` directory by running this in the command line:
 
